@@ -33,6 +33,7 @@ multi_tier_config/
 |   |   |   `-- backup_script.sh
 |   |   `-- templates/
 |   |       |-- mysql.cnf.j2
+
 |   |-- app/
 |   |   |-- tasks/
 |   |   |   |-- main.yml
