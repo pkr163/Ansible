@@ -1,0 +1,12 @@
+---
+web_host: "{{ inventory_hostname }}"
+web_port: 80
+web_root: /var/www/html
+web_user: webuser
+web_group: webgroup
+
+# Web server specific settings
+web_settings:
+  max_connections: 100
+  keepalive_timeout: 5
+  server_tokens: off
