@@ -1,0 +1,12 @@
+---
+app_host: "{{ inventory_hostname }}"
+app_port: 80
+app_root: /var/www/app
+app_user: appuser
+app_group: appgroup
+
+# Application specific settings
+app_settings:
+  max_requests: 1000
+  max_memory: 512M
+  env: production
