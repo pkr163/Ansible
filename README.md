@@ -1,2 +1,0 @@
-# Ansible
-Blueprint of Codes
