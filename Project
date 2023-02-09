@@ -1,0 +1,56 @@
+multi_tier_config/
+|-- inventory/
+|   |-- host_vars/
+|   |   |-- db.yml
+|   |   |-- app.yml
+|   |   `-- web.yml
+|   |-- group_vars/
+|   |   |-- all.yml
+|   |   |-- db.yml
+|   |   |-- app.yml
+|   |   `-- web.yml
+|   `-- inventory.ini
+|-- playbooks/
+|   |-- site.yml
+|   |-- db.yml
+|   |-- app.yml
+|   `-- web.yml
+|-- roles/
+|   |-- common/
+|   |   |-- tasks/
+|   |   |   |-- main.yml
+|   |   |   `-- security.yml
+|   |   |-- files/
+|   |   |   |-- ssh_keys
+|   |   |   `-- ntp.conf
+|   |   `-- templates/
+|   |-- db/
+|   |   |-- tasks/
+|   |   |   |-- main.yml
+|   |   |   `-- backup.yml
+|   |   |-- files/
+|   |   |   |-- my.cnf
+|   |   |   `-- backup_script.sh
+|   |   `-- templates/
+|   |       |-- mysql.cnf.j2
+|   |-- app/
+|   |   |-- tasks/
+|   |   |   |-- main.yml
+|   |   |   `-- deploy.yml
+|   |   |-- files/
+|   |   |   |-- app_dependencies.tar.gz
+|   |   |   `-- deploy_script.sh
+|   |   `-- templates/
+|   |       |-- app.conf.j2
+|   `-- web/
+|       |-- tasks/
+|       |   |-- main.yml
+|       |   `-- config.yml
+|       |-- files/
+|       |   |-- ssl_cert.crt
+|       |   `-- ssl_key.pem
+|       `-- templates/
+|           |-- nginx.conf.j2
+`-- scripts/
+    |-- healthcheck.py
+    `-- performance_monitor.
